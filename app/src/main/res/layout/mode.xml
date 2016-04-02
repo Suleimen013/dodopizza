@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#75d4a04c">
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dodo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00"
+        android:id="@+id/hour"
+        android:textSize="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/minute"
+        android:layout_toStartOf="@+id/minute" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/minute"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00"
+        android:id="@+id/hours"
+        android:textSize="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView8"
+        android:layout_toStartOf="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/textView8"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/hours"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignEnd="@+id/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=":"
+        android:id="@+id/textView9"
+        android:textSize="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/hours"
+        android:layout_toStartOf="@+id/hours" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/open"
+        android:background="@drawable/open"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/hour"
+        android:layout_toStartOf="@+id/hour" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/openorclosed"
+        android:layout_below="@+id/hour"
+        android:layout_alignLeft="@+id/hour"
+        android:layout_alignStart="@+id/hour"
+        android:layout_alignRight="@+id/hours"
+        android:layout_alignEnd="@+id/hours" />
+</RelativeLayout>
